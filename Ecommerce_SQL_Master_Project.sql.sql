@@ -455,7 +455,7 @@ FROM Country_Customer_Spending
 WHERE Country_Spending_Rank <= 2;
 
 
--- Question 21: Find customers whose spending is above their own country’s average customer spending.
+-- Question 21: Find customers whose spending is above their own countryÂ’s average customer spending.
 
 WITH Customer_Spending AS (
     SELECT 
@@ -492,7 +492,7 @@ JOIN Country_Average ca
 WHERE cs.Total_Spending > ca.Avg_Country_Spending;
 
 
--- Question 22 : Find each customer’s previous order amount and compare with current order amount.
+-- Question 22 : Find each customerÂ’s previous order amount and compare with current order amount.
 
 SELECT 
     CustomerID,
@@ -507,7 +507,7 @@ SELECT
 FROM Orders;
 
 
--- Question 23: Find each customer’s next order amount.
+-- Question 23: Find each customerÂ’s next order amount.
 
 SELECT 
    CustomerID,
@@ -537,7 +537,7 @@ SELECT
 FROM Orders;
 
 
--- Question 25: Find each customer’s highest single order amount and total spending together.
+-- Question 25: Find each customerÂ’s highest single order amount and total spending together.
 
 SELECT 
     CustomerID,
